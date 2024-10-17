@@ -2,6 +2,6 @@
 # WebApps-F24-Assignment-7
 Assignment 7 on DOM
 Hosted at 
- [Safari](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-MukundSaiRathod/safari)
- [Precision](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-MukundSaiRathod/precision)
- [Divlist](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-MukundSaiRathod/divlist)
+[Safari](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-MukundSaiRathod/safari)
+[Precision](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-MukundSaiRathod/precision)
+[Divlist](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment7-MukundSaiRathod/divlist)
