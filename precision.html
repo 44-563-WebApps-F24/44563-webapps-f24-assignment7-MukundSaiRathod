@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Precision</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+          padding: 20px;
+          text-align: center;
+          background-color: rgb(205, 168, 187);
+        }
+    
+        h2 {
+          margin-bottom: 20px;
+          
+        }
+    
+        #target {
+          font-size: 1.5em;
+          margin-top: 20px;
+          color: #333;
+        }
+    
+        #counter {
+          font-size: 1.5em;
+          margin-top: 10px;
+          color: #d3e099;
+        }
+    
+        .btn {
+          margin-top: 20px;
+          
+        }
+      </style>
+    </head>
+    
+    <body >
+      <div >
+        <h2 style="background-color: rgb(232, 107, 107);color: rgb(138, 202, 159);font-family: 'Times New Roman', Times, serif; color: black;">Mukund's Speed Check</h2>
+        <div id="target" style="font-family: Arial, Helvetica, sans-serif;">Your time </div>
+        <div id="counter" style="font-family: Arial, Helvetica, sans-serif; color: brown;" >Count</div>
+    
+        <button class="btn btn-success" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="startTime()">Start Timer</button>
+        <button class="btn btn-danger" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="recordTime()">Stop Timer</button>
+      </div>
+    
+      <script>
+        let stopTime = undefined;
+    
+        function recordTime() {
+          stopTime = Date.now();
+        }
+    
+        function startTime() {
+            const countdownStart = Math.floor(Math.random() * 9) + 2;
+    
+            for (let i = 0; i <= countdownStart; i++) {
+            setTimeout(() => {
+                document.getElementById("counter").innerHTML = countdownStart - i;
+            }, i * 1000);
+            }
+    
+            setTimeout(() => {
+            if (stopTime === undefined) {
+              document.getElementById("target").innerHTML = "Too Slow";
+            }
+            else {
+              let elapsedTime = Date.now() - stopTime;
+              document.getElementById("target").innerHTML = `Time was ${elapsedTime} Milli Seconds.`;
+            }
+          }, countdownStart*1000);
+        }
+      </script>
+      <div class="col-2" style="display: block;">
+        <ul>
+            <li> <a href="safari.html">Safari</a></li>
+            <li> <a href="divlist.html">Divlist</a></li>
+        </ul>
+    </div>
+    </body>
+</html>
